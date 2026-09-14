@@ -1,0 +1,11 @@
+.galeri {
+    display:grid;
+    border: 2px solid rebeccapurple;
+    grid-template-columns: repeat(5,1fr);
+    gap: 12px;
+    padding: 12px;
+
+}
+.galeri div {
+    border: 2px solid rebeccapurple;
+}
