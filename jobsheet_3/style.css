@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color: #8b2498;
     color: #333;
     line-height: 1.6;
 }
@@ -17,162 +17,181 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 1rem 5%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+.navbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .Logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    letter-spacing: 0.5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
 }
 
 .menus {
     display: flex;
     list-style: none;
-    gap: 2rem;
-    bottom: unset;
+    gap: 20px;
+    align-items: center;
+}
+
+.menus button {
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.menus button:hover {
+    background-color: #e63946;
+    color: white;
 }
 
 .menus li {
     font-weight: 500;
-    color: #555;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.menus li:hover {
-    color: #3498db;
 }
  
-.hero {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    margin: 10px;
-    padding: 20px;
-    gap: 20px;
-}
-
 .hero-text {
-    flex: 1;
+    max-width: 600px;
+    padding: 60px 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.hero-text h2, .hero-text p {
-    border: 1px solid #ccc;
+.hero-text h2 {
+    font-size: 36px;
+    color: #101010;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: #0a0a0a;
     margin-bottom: 10px;
-    padding: 5px;
-}
-
-.hero-image {
-    flex: 1;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 150px;
 }
 
 .btn {
-    background: #2196F3;
-    color: white;
+    background-color: #191818;
+    color: rgb(198, 151, 197);
+    padding: 12px 25px;
     border: none;
-    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
 }
 
+.btn:hover {
+    background-color: #101010;
+}
+
+.hero-image {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+}
+ 
 .produk-section {
-    display: block;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 3rem auto;
-    padding: 0 5%;
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
     border: none;
-    background: transparent;
-    text-align: left;
+    width: 100%;
 }
 
 .produk-section h3 {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-    text-align: center;
+    font-size: 28px;
+    color: #1d3557;
+    margin-bottom: 30px;
 }
 
 .galeri {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    bottom: unset;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
- 
-div.galeri:empty {
-    display: none;
-}
- 
+
 .card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 1.2rem;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.card-img {
+.card img {
     width: 100%;
     height: 160px;
-    background-color: #e2e8f0;
+    object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.card-img::after {
-    content: "Gambar Produk";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #a0aec0;
-    font-size: 0.85rem;
+    margin-bottom: 15px;
 }
 
 .card p {
-    font-size: 1.1rem;
     font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .btn-kecil {
-    background-color: #27ae60;
-    color: #ffffff;
+    background-color: #8b2498;
+    color: white;
     border: none;
-    padding: 0.6rem 1.5rem;
-    border-radius: 6px;
-    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-    width: 100%;
+    font-weight: 500;
+    transition: background 0.3s;
 }
 
+.btn-kecil:hover {
+    background-color: #457b9d;
+}
+ 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
+    background-color: #8b2498;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-menu span:hover {
+    color: #e63946;
 }
